@@ -30,6 +30,8 @@
 		5E30CAB2295DF4A7000518CD /* CharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAB1295DF4A7000518CD /* CharacterListViewViewModel.swift */; };
 		5E30CAB4295DF51F000518CD /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAB3295DF51F000518CD /* CharactersListView.swift */; };
 		5E30CAB6295DF994000518CD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAB5295DF994000518CD /* Extensions.swift */; };
+		5E30CAB8295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAB7295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift */; };
+		5E30CABA295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAB9295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,8 @@
 		5E30CAB1295DF4A7000518CD /* CharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewViewModel.swift; sourceTree = "<group>"; };
 		5E30CAB3295DF51F000518CD /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		5E30CAB5295DF994000518CD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5E30CAB7295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterListViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E30CAB9295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterListViewCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5E30CAB3295DF51F000518CD /* CharactersListView.swift */,
+				5E30CAB7295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				5E30CAB1295DF4A7000518CD /* CharacterListViewViewModel.swift */,
+				5E30CAB9295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 				5E30CA7A295D9F45000518CD /* RMTabController.swift in Sources */,
 				5E30CA76295D9F45000518CD /* AppDelegate.swift in Sources */,
 				5E30CA78295D9F45000518CD /* SceneDelegate.swift in Sources */,
+				5E30CAB8295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift in Sources */,
 				5E30CA91295DAACB000518CD /* RMLocation.swift in Sources */,
+				5E30CABA295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift in Sources */,
 				5E30CA9C295DABD8000518CD /* RMEpisodViewController.swift in Sources */,
 				5E30CA9E295DABE8000518CD /* RMSettingsViewController.swift in Sources */,
 				5E30CAB6295DF994000518CD /* Extensions.swift in Sources */,
