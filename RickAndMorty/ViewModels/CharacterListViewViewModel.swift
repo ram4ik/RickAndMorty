@@ -9,6 +9,7 @@ import UIKit
 
 protocol RMCharacterListViewModelDelegate: AnyObject {
     func didLoadInitialCharacters()
+    func didSelectCharacter(_ character: RMCharacter)
 }
 
 final class CharacterListViewViewModel: NSObject {
@@ -30,8 +31,10 @@ final class CharacterListViewViewModel: NSObject {
     
     private var callViewModels: [RMCharacterListViewCollectionViewCellViewModel] = []
     
+    private var apiInfo: RMGetCharactersResponse.Info? = nil
+    
     public func fetchCharacters() {
-            
+        
         RMService.share.execute(
             .listCharactersRequest,
             expecting: RMGetCharactersResponse.self
@@ -39,7 +42,9 @@ final class CharacterListViewViewModel: NSObject {
             switch result {
             case .success(let responseModel):
                 let results = responseModel.results
+                let info = responseModel.info
                 self?.characters = results
+                self?.apiInfo = info
                 DispatchQueue.main.async {
                     self?.delegate?.didLoadInitialCharacters()
                 }
@@ -47,7 +52,19 @@ final class CharacterListViewViewModel: NSObject {
                 print(String(describing: error))
             }
         }
+        
     }
+    
+    public func fetchAdditionalCharacters() {
+        
+    }
+    
+    public var shouldShowLoadMoreIndicator: Bool {
+        return apiInfo?.next != nil
+    }
+    
+    
+    
 }
 
 extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
@@ -69,5 +86,20 @@ extension CharacterListViewViewModel: UICollectionViewDataSource, UICollectionVi
         let bounds = UIScreen.main.bounds
         let width = (bounds.width - 30) / 2
         return CGSize(width: width, height: width * 1.5)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+        let character = characters[indexPath.row]
+        delegate?.didSelectCharacter(character)
+    }
+}
+
+extension CharacterListViewViewModel: UIScrollViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard shouldShowLoadMoreIndicator else {
+            return
+        }
     }
 }
