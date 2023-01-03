@@ -36,6 +36,7 @@
 		5E30CABF296174A9000518CD /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CABE296174A9000518CD /* RMCharacterDetailView.swift */; };
 		5E30CAC1296174DF000518CD /* RMCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAC0296174DF000518CD /* RMCharacterDetailViewViewModel.swift */; };
 		5E30CAC32961D99E000518CD /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E30CAC22961D99E000518CD /* RMFooterLoadingCollectionReusableView.swift */; };
+		5E35EF3F29648FEE002BA531 /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E35EF3E29648FEE002BA531 /* RMImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		5E30CABE296174A9000518CD /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 		5E30CAC0296174DF000518CD /* RMCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
 		5E30CAC22961D99E000518CD /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		5E35EF3E29648FEE002BA531 /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		5E30CA8D295DA9D3000518CD /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5E35EF3E29648FEE002BA531 /* RMImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				5E30CA76295D9F45000518CD /* AppDelegate.swift in Sources */,
 				5E30CA78295D9F45000518CD /* SceneDelegate.swift in Sources */,
 				5E30CAB8295E077E000518CD /* RMCharacterListViewCollectionViewCell.swift in Sources */,
+				5E35EF3F29648FEE002BA531 /* RMImageLoader.swift in Sources */,
 				5E30CA91295DAACB000518CD /* RMLocation.swift in Sources */,
 				5E30CABA295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift in Sources */,
 				5E30CA9C295DABD8000518CD /* RMEpisodViewController.swift in Sources */,

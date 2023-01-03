@@ -61,7 +61,7 @@ final class RMRequest {
     
     convenience init?(url: URL) {
         let string = url.absoluteString
-        if string.contains(Constants.baseUrl) {
+        if !string.contains(Constants.baseUrl) {
             return nil
         }
         let trimmed = string.replacingOccurrences(of: Constants.baseUrl+"/", with: "")
