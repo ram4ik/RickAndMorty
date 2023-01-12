@@ -53,7 +53,6 @@ final class RMCharacterEpisodeCollectionViewCellViewModel {
             switch result {
             case .success(let model):
                 DispatchQueue.main.async {
-                    print(String(describing: model))
                     self?.episode = model
                 }
             case .failure(let failure):
