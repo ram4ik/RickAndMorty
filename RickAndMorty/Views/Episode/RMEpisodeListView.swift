@@ -18,7 +18,7 @@ final class RMEpisodeListView: UIView {
     
     public weak var delegate: RMEpisodeListViewDelegate?
     
-    private let viewModel = CharacterListViewViewModel()
+    private let viewModel = RMEpisodeListViewViewModel()
     
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
@@ -35,7 +35,7 @@ final class RMEpisodeListView: UIView {
         collectionView.isHidden = true
         collectionView.alpha = 0
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.register(RMCharacterListViewCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterListViewCollectionViewCell.cellIdentifier)
+        collectionView.register(RMCharacterEpisodeCollectionViewCell.self, forCellWithReuseIdentifier: RMCharacterEpisodeCollectionViewCell.cellIdentifier)
         collectionView.register(RMFooterLoadingCollectionReusableView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                                 withReuseIdentifier: RMFooterLoadingCollectionReusableView.identifier)
@@ -51,7 +51,7 @@ final class RMEpisodeListView: UIView {
         
         spinner.startAnimating()
         viewModel.delegate = self
-        viewModel.fetchCharacters()
+        viewModel.fetchEpisodes()
         
         setUpCollectionView()
     }
@@ -81,11 +81,11 @@ final class RMEpisodeListView: UIView {
 }
 
 extension RMEpisodeListView: RMEpisodeListViewModelDelegate {
-    func didSelectCharacter(_ character: RMCharacter) {
-        delegate?.rmCharacterListView(self, didSelectCharacter: character)
+    func didSelectEpisode(_ episode: RMEpisod) {
+        delegate?.rmEpisodeListView(self, didSelectEpisode: episode)
     }
     
-    func didLoadInitialCharacters() {
+    func didLoadInitialEpisodes() {
         collectionView.reloadData()
         spinner.stopAnimating()
         collectionView.isHidden = false
@@ -95,7 +95,7 @@ extension RMEpisodeListView: RMEpisodeListViewModelDelegate {
         }
     }
     
-    func didLoadMoreCharacters(with newIndexPaths: [IndexPath]) {
+    func didLoadMoreEpisodes(with newIndexPaths: [IndexPath]) {
         collectionView.performBatchUpdates {
             self.collectionView.insertItems(at: newIndexPaths)
         }
