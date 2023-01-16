@@ -49,6 +49,7 @@
 		5E9C360D297439C900C157BC /* RMGetAllEpisodesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9C360C297439C900C157BC /* RMGetAllEpisodesResponse.swift */; };
 		5EBF6B492972F800003C2FDF /* RMEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF6B482972F800003C2FDF /* RMEpisodeListView.swift */; };
 		5EBF6B4B2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF6B4A2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift */; };
+		5EE8000A2975CE9B004018A7 /* RMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE800092975CE9B004018A7 /* RMSearchViewController.swift */; };
 		5EE9E96429705671006E99D1 /* RMEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -97,6 +98,7 @@
 		5E9C360C297439C900C157BC /* RMGetAllEpisodesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllEpisodesResponse.swift; sourceTree = "<group>"; };
 		5EBF6B482972F800003C2FDF /* RMEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListView.swift; sourceTree = "<group>"; };
 		5EBF6B4A2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
+		5EE800092975CE9B004018A7 /* RMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchViewController.swift; sourceTree = "<group>"; };
 		5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +256,7 @@
 			children = (
 				5E30CABC29617400000518CD /* RMCharacterDetailViewController.swift */,
 				5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */,
+				5EE800092975CE9B004018A7 /* RMSearchViewController.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				5E30CAB0295DF13C000518CD /* RMGetCharactersResponse.swift in Sources */,
 				5E30CAC1296174DF000518CD /* RMCharacterDetailViewViewModel.swift in Sources */,
 				5E30CAA6295DC286000518CD /* RMOrigin.swift in Sources */,
+				5EE8000A2975CE9B004018A7 /* RMSearchViewController.swift in Sources */,
 				5E30CAA8295DC2F1000518CD /* RMSingleLocation.swift in Sources */,
 				5E30CAAA295DC3D9000518CD /* RMCharacterStatus.swift in Sources */,
 				5E30CAAC295DC474000518CD /* RMCharacterGender.swift in Sources */,
