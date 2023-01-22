@@ -47,7 +47,7 @@ enum RMSettingsOption: CaseIterable {
         case .privacy:
             return .systemOrange
         case .apiReference:
-            return .systemBackground
+            return .systemBrown
         case .viewSeries:
             return .systemMint
         case .viewCode:
