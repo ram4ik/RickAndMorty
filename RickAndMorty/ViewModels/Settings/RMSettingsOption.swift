@@ -9,7 +9,7 @@ import UIKit
 
 enum RMSettingsOption: CaseIterable {
     
-    case reteApp
+    case rateApp
     case contactUs
     case terms
     case privacy
@@ -17,9 +17,28 @@ enum RMSettingsOption: CaseIterable {
     case viewSeries
     case viewCode
     
+    var targetUrl: URL? {
+        switch self {
+        case .rateApp:
+            return nil
+        case .contactUs:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        case .terms:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        case .privacy:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        case .apiReference:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        case .viewSeries:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        case .viewCode:
+            return URL(string: "https://github.com/ram4ik/RickAndMorty")
+        }
+    }
+    
     var displayTitle: String {
         switch self {
-        case .reteApp:
+        case .rateApp:
             return "Rate App"
         case .contactUs:
             return "Contacs Us"
@@ -38,7 +57,7 @@ enum RMSettingsOption: CaseIterable {
     
     var iconContainerColor: UIColor {
         switch self {
-        case .reteApp:
+        case .rateApp:
             return .systemRed
         case .contactUs:
             return .systemBlue
@@ -57,7 +76,7 @@ enum RMSettingsOption: CaseIterable {
     
     var iconImage: UIImage? {
         switch self {
-        case .reteApp:
+        case .rateApp:
             return UIImage(systemName: "star.fill")
         case .contactUs:
             return UIImage(systemName: "paperplane")
