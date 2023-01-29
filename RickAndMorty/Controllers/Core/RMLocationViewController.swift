@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RMLocationViewController: UIViewController, RMLocationViewModelDelegate {
+final class RMLocationViewController: UIViewController, RMLocationViewModelDelegate, RMLocationViewDelegate {
     
     private let primaryView = RMLocationView()
     
@@ -15,6 +15,7 @@ final class RMLocationViewController: UIViewController, RMLocationViewModelDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        primaryView.delegate = self
         view.addSubview(primaryView)
         view.backgroundColor = .systemBackground
         title = "Locations"
@@ -40,6 +41,12 @@ final class RMLocationViewController: UIViewController, RMLocationViewModelDeleg
             primaryView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
             primaryView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
+    }
+    
+    func rmLocationView(_ locationView: RMLocationView, didSelect location: RMLocation) {
+        let vc = RMLocationDetailViewController(location: location)
+        vc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func didFetchInitialLocations() {
