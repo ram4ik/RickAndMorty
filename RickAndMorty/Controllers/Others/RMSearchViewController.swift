@@ -14,6 +14,17 @@ final class RMSearchViewController: UIViewController {
             case character
             case episode
             case location
+            
+            var title: String {
+                switch self {
+                case .episode:
+                    return "Search Characters"
+                case .location:
+                    return "Search Locations"
+                case .character:
+                    return "Search Characters"
+                }
+            }
         }
         
         let type: `Type`
@@ -32,7 +43,7 @@ final class RMSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Search"
+        title = config.type.title
         view.backgroundColor = .systemBackground
     }
     
