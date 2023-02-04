@@ -60,6 +60,7 @@
 		5EA265AF297835FA002E67FB /* RMEpisodeInfoCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA265AE297835FA002E67FB /* RMEpisodeInfoCollectionViewCellModel.swift */; };
 		5EBF6B492972F800003C2FDF /* RMEpisodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF6B482972F800003C2FDF /* RMEpisodeListView.swift */; };
 		5EBF6B4B2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF6B4A2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift */; };
+		5EC744CC298E986D0021B4D9 /* RMSearchOptionsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC744CB298E986D0021B4D9 /* RMSearchOptionsPickerViewController.swift */; };
 		5EE8000A2975CE9B004018A7 /* RMSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE800092975CE9B004018A7 /* RMSearchViewController.swift */; };
 		5EE9E96429705671006E99D1 /* RMEpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */; };
 		5EF8542529881ADC00DFCE47 /* RMSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8542429881ADC00DFCE47 /* RMSearchView.swift */; };
@@ -129,6 +130,7 @@
 		5EA265AE297835FA002E67FB /* RMEpisodeInfoCollectionViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeInfoCollectionViewCellModel.swift; sourceTree = "<group>"; };
 		5EBF6B482972F800003C2FDF /* RMEpisodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListView.swift; sourceTree = "<group>"; };
 		5EBF6B4A2972FE7F003C2FDF /* RMEpisodeListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeListViewViewModel.swift; sourceTree = "<group>"; };
+		5EC744CB298E986D0021B4D9 /* RMSearchOptionsPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchOptionsPickerViewController.swift; sourceTree = "<group>"; };
 		5EE800092975CE9B004018A7 /* RMSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchViewController.swift; sourceTree = "<group>"; };
 		5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodeDetailViewController.swift; sourceTree = "<group>"; };
 		5EF8542429881ADC00DFCE47 /* RMSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchView.swift; sourceTree = "<group>"; };
@@ -322,9 +324,9 @@
 		5E30CABB296173CE000518CD /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				5EC744CD298E99950021B4D9 /* Search */,
 				5E30CABC29617400000518CD /* RMCharacterDetailViewController.swift */,
 				5EE9E96329705671006E99D1 /* RMEpisodeDetailViewController.swift */,
-				5EE800092975CE9B004018A7 /* RMSearchViewController.swift */,
 				5EFB183B2986BB2C0007C42F /* RMLocationDetailViewController.swift */,
 			);
 			path = Others;
@@ -403,6 +405,15 @@
 				5EBF6B482972F800003C2FDF /* RMEpisodeListView.swift */,
 			);
 			path = Episode;
+			sourceTree = "<group>";
+		};
+		5EC744CD298E99950021B4D9 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				5EC744CB298E986D0021B4D9 /* RMSearchOptionsPickerViewController.swift */,
+				5EE800092975CE9B004018A7 /* RMSearchViewController.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		5EF8542329881AB100DFCE47 /* Search */ = {
@@ -539,6 +550,7 @@
 				5E30CA91295DAACB000518CD /* RMLocation.swift in Sources */,
 				5E6A241D297C44260033D036 /* RMSettingsCellViewModel.swift in Sources */,
 				5EF8542529881ADC00DFCE47 /* RMSearchView.swift in Sources */,
+				5EC744CC298E986D0021B4D9 /* RMSearchOptionsPickerViewController.swift in Sources */,
 				5E5D31F8297D6BC100C1AFD4 /* RMSettingsView.swift in Sources */,
 				5E30CABA295E08BC000518CD /* RMCharacterListViewCollectionViewCellViewModel.swift in Sources */,
 				5EF8542E29881FFC00DFCE47 /* RMSearchInputView.swift in Sources */,
