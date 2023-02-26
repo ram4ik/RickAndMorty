@@ -37,13 +37,13 @@ final class CharacterListViewViewModel: NSObject {
     
     private var cellViewModels: [RMCharacterListViewCollectionViewCellViewModel] = []
     
-    private var apiInfo: RMGetCharactersResponse.Info? = nil
+    private var apiInfo: RMGetAllCharactersResponse.Info? = nil
     
     public func fetchCharacters() {
         
         RMService.share.execute(
             .listCharactersRequest,
-            expecting: RMGetCharactersResponse.self
+            expecting: RMGetAllCharactersResponse.self
         ) { [weak self] result in
             switch result {
             case .success(let responseModel):
@@ -74,7 +74,7 @@ final class CharacterListViewViewModel: NSObject {
         }
         
         RMService.share.execute(request,
-                                expecting: RMGetCharactersResponse.self) { [weak self] result in
+                                expecting: RMGetAllCharactersResponse.self) { [weak self] result in
             guard let strongSelf = self else {
                 return
             }
