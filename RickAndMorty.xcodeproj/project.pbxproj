@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0F27E429B51EE800ADC29E /* RMSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0F27E329B51EE800ADC29E /* RMSearchResultsView.swift */; };
 		5E17FEC02982DE7100A7F91B /* RMLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E17FEBF2982DE7100A7F91B /* RMLocationView.swift */; };
 		5E17FEC22982E57A00A7F91B /* RMLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E17FEC12982E57A00A7F91B /* RMLocationViewModel.swift */; };
 		5E296772298409E1002011AA /* RMGetAllLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E296771298409E1002011AA /* RMGetAllLocationResponse.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E0F27E329B51EE800ADC29E /* RMSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSearchResultsView.swift; sourceTree = "<group>"; };
 		5E17FEBF2982DE7100A7F91B /* RMLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationView.swift; sourceTree = "<group>"; };
 		5E17FEC12982E57A00A7F91B /* RMLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationViewModel.swift; sourceTree = "<group>"; };
 		5E296771298409E1002011AA /* RMGetAllLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllLocationResponse.swift; sourceTree = "<group>"; };
@@ -424,6 +426,7 @@
 				5EF8542429881ADC00DFCE47 /* RMSearchView.swift */,
 				5EF8542829881F2B00DFCE47 /* RMNoSearchResultsView.swift */,
 				5EF8542D29881FFC00DFCE47 /* RMSearchInputView.swift */,
+				5E0F27E329B51EE800ADC29E /* RMSearchResultsView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				5EF8542C29881F9500DFCE47 /* RMNoSearchResultsViewViewModel.swift in Sources */,
 				5E30CAAA295DC3D9000518CD /* RMCharacterStatus.swift in Sources */,
 				5E30CAAC295DC474000518CD /* RMCharacterGender.swift in Sources */,
+				5E0F27E429B51EE800ADC29E /* RMSearchResultsView.swift in Sources */,
 				5E95F4062971A33A000AAB64 /* RMApiCacheManager.swift in Sources */,
 				5EFB18412986BF2F0007C42F /* RMLocationDetailViewViewModel.swift in Sources */,
 				5E30CA9A295DABC5000518CD /* RMLocationViewController.swift in Sources */,
